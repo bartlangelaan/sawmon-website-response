@@ -1,0 +1,11 @@
+{
+  "name": "sawmon-website-response",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "This is a Sawmon plugin. It shows the response code and response time after every website request.",
+  "repository": "bartlangelaan/sawmon-website-response",
+  "devDependencies": {
+    "debug": "^2.2.0"
+  }
+}
