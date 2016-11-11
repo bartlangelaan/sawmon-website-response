@@ -26,8 +26,10 @@ module.exports.websites = {
 
         if (!passTrough.request || !passTrough.request.statusCode) {
 
-            debug('No statusCode found in passTrough.request');
+            debug('No statusCode found in passTrough.request. The request found is:');
             debug(passTrough.request);
+            debug('The complete passTrough is:');
+            debug(passTrough);
 
             return Promise.resolve();
 
