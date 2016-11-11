@@ -33,7 +33,7 @@ module.exports.websites = {
 
         }
         passTrough.instance.status = passTrough.request.statusCode;
-        passTrough.instance.responseTime = passTrough.request.elapsedTime / 1000;
+        passTrough.instance.responseTime = passTrough.request.elapsedTime ? (passTrough.request.elapsedTime / 1000) : null;
 
         return passTrough.instance.save();
 
